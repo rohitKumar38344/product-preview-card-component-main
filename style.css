@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: hsl(30, 38%, 92%);
+}
+
+section {
+  max-width: 55rem;
+  border-radius: 1.6rem;
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px auto;
+  overflow: hidden;
+}
+.img-container {
+  background-image: url("images/image-product-desktop.jpg");
+  background-size: cover;
+}
+.img-container img {
+  max-width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+}
+
+.info > span {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+.product-title {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  list-style: 1.5;
+  color: hsl(212, 21%, 14%);
+}
+
+.product-info {
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.2;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+}
+
+.new-price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  margin-right: 2rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.add-to-cart-btn {
+  font: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  background-color: #395144;
+  color: hsl(0, 0%, 100%);
+  padding: 1.6em 0.2em;
+}
+
+.add-to-cart-btn img {
+  margin-right: 1rem;
+}
+
+.add-to-cart-btn:hover {
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/***** Responsive Desing Code *****/
+@media (max-width: 600px) {
+  section {
+    margin: 100px 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 1fr;
+  }
+
+  .img-container {
+    background-image: url("images/image-product-mobile.jpg");
+  }
+}
